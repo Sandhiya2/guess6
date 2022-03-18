@@ -1,0 +1,25 @@
+.w3-padding h1{
+margin-left: 27%;
+color:white;
+}
+img{
+margin-left:24%;
+height: 300px;
+width:200px;
+}
+h2{
+    margin-top: 5%;
+    margin-left: 8%;
+    color:white;  
+}
+h3{
+    margin-left: 18%;
+}
+.ans h2{
+
+    color:black;
+}
+#ans h2{
+    color: white;
+    margin-left:40%;
+}

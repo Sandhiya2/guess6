@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>Guess who am I-6</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="guess.css">
+<body bgcolor="black">
+
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:450px">
+  <h3 class="w3-bar-item"><b><u>UNLOCK ME...</u></b></h3>
+<button class="w3-bar-item w3-button tablink" onclick="openFeature(event, 'hint1')">  <img src="lock1.png"></button>
+  <button class="w3-bar-item w3-button tablink" onclick="openFeature(event, 'hint2')"><img src="lock2.png"></button>
+  <button class="w3-bar-item w3-button tablink" onclick="openFeature(event, 'hint3')"><img src="lock3.png"></button>
+  <button class="w3-bar-item w3-button tablink" onclick="openFeature(event, 'hint4')"><img src="lock4.png"></button>
+  <button class="w3-bar-item w3-button tablink" onclick="openFeature(event, 'hint5')"><img src="lock5.png"></button>
+  <button class="w3-bar-item w3-button tablink" onclick="openFeature(event, 'ans')"><h3 class="ans">ANSWER...</h3></button>
+  
+</div>
+
+<div style="margin-left:500px">
+  <div class="w3-padding"><h1><strong><u>GUESS WHO AM I???</u></strong></h1></div>
+  <div id="hint1" class="hint1" style="display:none">
+    <h2>1.India’s Bill Gates and one of the Richest Indian for the past several years."</h2>
+  </div>
+  <div id="hint2" class="hint2" style="display:none">
+    <h2>2.He is Founder and Chairman of Wipro Technologies.</h2>
+  </div>
+
+  <div id="hint3" class="hint3" style="display:none">
+    <h2>3.He is Providing his guidence to company from last four decades and one of the great indian leader of Software Field.</h2>
+  </div>
+  <div id="hint4" class="hint4" style="display:none">
+    <h2>4.He is informally known as the Czar of the Indian IT Industry.</h2>
+  </div>
+  <div id="hint5" class="hint5" style="display:none">
+    <h2>5.The first Indian to sign the Giving Pledge, his lifetime giving now stands at US$21 billion.</h2>
+  </div>
+  <div id="ans" class="ans" style="display:none">
+    <h2>Azim Premji</h2>
+  </div>
+</div>
+
+<script>
+function openFeature(evt, featureName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("feature");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-black", ""); 
+  }
+  document.getElementById(featureName).style.display = "block";
+  evt.currentTarget.className += " w3-black";
+}
+</script>
+
+</body>
+</html>
